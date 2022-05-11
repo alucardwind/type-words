@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>单个字符字体的宽度</title>
+    <style>
+        * {
+            margin: 0;
+            border: none;
+            padding: 0;
+        }
+        div {
+            margin: 30px auto;
+            text-align: center;
+        }
+        div span{
+            line-height: 0;
+        }
+        .s{
+            font-size: small;
+        }
+        .n{
+            /*font-size: normal;*/
+            font-size: 16px;
+        }
+        .l{
+            font-size:large;
+        }
+    </style>
+</head>
+
+<body>
+<div class="s">
+    <span>田</span>
+</div>
+<div class="n">
+    <span>田</span>
+    <span>a</span>
+    <span>aa</span>
+</div>
+<div class="l">
+    <span>田</span>
+</div>
+</body>
+</html>

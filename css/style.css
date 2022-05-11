@@ -1,0 +1,222 @@
+@charset "UTF-8";
+
+/* 全局样式 */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑", "Microsoft YaHei", "Segoe UI", sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html{
+    color: #b6b9bb;
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+img{
+    border: 1px solid #bdde2d;
+}
+
+#background{
+    width: 100%;
+    height: 100%;
+    background: black;
+    box-sizing: border-box;
+    border: 2px solid #bdde2d;
+    display: grid;
+    grid-template-rows: auto 40px 200px;
+    position: absolute;
+    overflow: hidden;
+}
+
+#row1{
+    display: grid;
+    grid-template-columns: auto 20% 20%;
+}
+
+#row1_col1{
+    padding: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#row1_col2{
+    border-left: 2px solid #bdde2d;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 32px auto;
+}
+
+#row1_col2_content{
+    overflow-y: auto;
+}
+
+#row1_col3{
+    border-left: 2px solid #bdde2d;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 32px auto;
+}
+
+#row1_col3_content{
+    overflow-y: auto;
+}
+
+#row1_col3 img{
+    /*margin: 10px;*/
+}
+
+.row_title {
+    border-bottom: 1px dashed #bdde2d;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#row2{
+    width: 100%;
+    border-top: 2px solid #bdde2d;
+    padding-left: 10px;
+}
+
+#row3{
+    width: 100%;
+    border-top: 2px solid #bdde2d;
+    position: relative;
+    overflow: auto;
+}
+
+#keyboard_input{
+    height: 100%;
+    width: 80%;
+    padding: 0 10px 0 10px;
+    background: black;
+    border: none;
+    color: #b6b9bb;
+}
+
+#keyboard_input:focus{
+    border: none;
+    outline: none;
+}
+
+.writecode {
+    overflow: hidden;
+    white-space: pre-line;
+    word-break: break-all;
+    animation: coder 2s;
+    width: 100%;
+    margin-bottom: 4px;
+    min-height: 21px;
+}
+
+.speaker{
+    font-size: 0.8em;
+    padding-right: 5px;
+    padding-left: 5px;
+    line-height: 1em;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+.yellow_font{
+    color: #bdde2d;
+}
+
+.row3_canvas{
+    position: absolute;
+}
+
+.node{
+    position: absolute;
+}
+
+.stream_border{
+    width: 100%;
+    height: 21px;
+    border: 1px solid #bdde2d;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.stream_content{
+    height: 100%;
+    width: 100%;
+}
+
+#mask{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: black;
+    position: absolute;
+    padding: 20px;
+    /*display: none;*/
+}
+
+#mask .writecode {
+    overflow: hidden;
+    white-space: pre-line;
+    word-break: break-all;
+    animation: coder 2s;
+    width: 100%;
+    font-size: 2em;
+    text-align: center;
+}
+
+.aplayer{
+    float: right;
+}
+
+.window{
+    box-sizing: border-box;
+    border: 2px solid #bdde2d;
+    position: absolute;
+    background: black;
+    overflow: hidden;
+}
+
+.window .title_line {
+    border-bottom: 2px solid #bdde2d;
+    height: 29px;
+    width: 100%;
+    padding: 5px;
+}
+
+.title_line p{
+    font-size: 0.9em;
+    float: left;
+}
+
+.close_buttom{
+    float: right;
+}
+
+.window_content{
+    padding: 10px;
+}
+
+.window_content img{
+    border: none;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.window_content .units{
+    position: absolute;
+}
+
+.cross {
+    position: absolute;
+    color: white;
+}
